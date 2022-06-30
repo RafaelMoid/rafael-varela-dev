@@ -1,11 +1,11 @@
-import Link from 'next/link'
+import Link from '../src/components/Link';
 
 export default function HomePage() {
     return (
         <div>
             <h1>Rafael Varela - FAQ</h1>
             <Link href="/" passHref>
-                <a>Ir para a HOME</a>
+                Ir para a HOME
             </Link>
         </div>
     )
