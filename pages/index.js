@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from '../src/components/Link';
 
-function GlobalStyles() {
+function GlobalStyle() {
     return(
         <style global jsx>{`
             body {
@@ -30,6 +30,7 @@ function Title({children, as}) {
 export default function HomePage() {
     return (
         <div>
+            <GlobalStyle/>
             <Title as="h1">Rafael Varela - HOME</Title>
             <Link href="/portfolio">
                 Acesse meu portfolio para saber mais
