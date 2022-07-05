@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from '../src/components/Link';
 import Footer from '../src/components/patterns/Footer';
-
+import Navbar from "../src/components/patterns/Navbar"
 
 function Title({children, as}) {
     const Tag = as;
@@ -21,12 +21,13 @@ function Title({children, as}) {
 
 export default function HomePage() {
     return (
-        <div>
-            <Title as="h1">Rafael Varela - HOME</Title>
-            <Link href="/StrateegiaLP">
-                Acesse meu portfolio para saber mais
-            </Link>
-            <Footer />
-        </div>
+            <div>
+                <Navbar />
+                <Title as="h1">Rafael Varela - HOME</Title>
+                <Link href="/StrateegiaLP">
+                    Acesse meu portfolio para saber mais
+                </Link>
+                <Footer />
+            </div>
     )
 }

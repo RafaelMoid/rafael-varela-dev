@@ -1,8 +1,10 @@
 import Link from '../src/components/Link';
+import Navbar from "../src/components/patterns/Navbar"
 
 export default function Page404() {
     return (
         <div>
+            <Navbar/>
             <h1>Erro 404</h1>
             <h3>
                 Esse caminho não leva a nenhuma página de nosso site, mas isso não quer dizer que você está perdido, muitos caminhos tidos

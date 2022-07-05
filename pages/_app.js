@@ -1,5 +1,6 @@
 import GlobalStyle from "../src/theme/GlobalStyle";
 import Head from 'next/head';
+import Navbar from "../src/components/patterns/Navbar"
 
 function MyApp({ Component, pageProps }) {
     return (
@@ -8,7 +9,7 @@ function MyApp({ Component, pageProps }) {
                 <title>Dev Rafael Varela</title>
             </Head>
             <GlobalStyle/>
-            <Component {...pageProps} />    
+            <Component {...pageProps} />
         </>
     )
 }

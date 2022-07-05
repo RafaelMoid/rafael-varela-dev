@@ -2,6 +2,7 @@ import Footer from '../../components/patterns/Footer'
 import Link from '../../components/Link'
 import { theme } from '../../theme/theme';
 import { Image, Box, Text, Icon, Input, Button } from '../../theme/components';
+import Navbar from "../../components/patterns/Navbar"
 
 const LOGO_RAFAEL_VARELA_URL = '/images/logoMd.png';
 const SIDE_IMAGE_URL = '/images/telaWeb.png'
@@ -96,6 +97,7 @@ function SideImage() {
 export default function StrateegiaLP() {
   return (
     <Box>
+      <Navbar/>
       <Box
         as="main"
         styleSheet={{
