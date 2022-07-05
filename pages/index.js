@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from '../src/components/Link';
+import Footer from '../src/components/patterns/Footer';
 
 
 function Title({children, as}) {
@@ -22,9 +23,10 @@ export default function HomePage() {
     return (
         <div>
             <Title as="h1">Rafael Varela - HOME</Title>
-            <Link href="/portfolio">
+            <Link href="/StrateegiaLP">
                 Acesse meu portfolio para saber mais
             </Link>
+            <Footer />
         </div>
     )
 }

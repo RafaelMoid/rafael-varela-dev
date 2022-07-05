@@ -1,12 +1,18 @@
 import { theme } from '../../../theme/theme';
 import { Box, Text } from '../../../theme/components';
+import {
+  faYoutube,
+  faInstagram,
+  faLinkedin,
+  faGithub
+} from "@fortawesome/fontawesome-svg-core";
 
 export default function Footer() {
   return (
     <Box
       as="footer"
       styleSheet={{
-        backgroundColor: theme.colors.neutral[900]
+        backgroundColor: theme.colors.primary[100]
       }}
     >
       <Box
@@ -25,15 +31,27 @@ export default function Footer() {
           },
         }}
       >
+
+        <ul>
+          <li>
+            <faGithub/>
+          </li>
+          <li>
+            Icon
+          </li>
+          <li>
+            Icon
+          </li>
+        </ul>
         <Text
           as="p"
           styleSheet={{
             textVariant: theme.typography.variants.body3,
             textAlign: "center",
-            color: theme.colors.neutral[400],
+            color: theme.colors.primary[400],
           }}
         >
-          &copy; {new Date().getFullYear()} DevSoutinho. Todos os direitos reservados.
+          &copy; {new Date().getFullYear()} Rafael Varela. Todos os direitos reservados.
         </Text>
       </Box>
     </Box>

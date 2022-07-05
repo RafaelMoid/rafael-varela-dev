@@ -1,8 +1,12 @@
 import GlobalStyle from "../src/theme/GlobalStyle";
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
     return (
         <>
+            <Head>
+                <title>Dev Rafael Varela</title>
+            </Head>
             <GlobalStyle/>
             <Component {...pageProps} />    
         </>

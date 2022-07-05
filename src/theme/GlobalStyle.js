@@ -12,7 +12,7 @@ export default function GlobalStyle() {
           text-decoration: none;
         }
         body {
-          font-family: ${theme.typography.fontFamily}, sans-serif;
+          font-family: montserrat, sans-serif;
         }
         img, video {
           max-width: 100%;
