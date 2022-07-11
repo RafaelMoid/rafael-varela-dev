@@ -1,14 +1,13 @@
 import { theme } from '../../../theme/theme';
-import { Box, Text } from '../../../theme/components';
+import { Box, Text, Image } from '../../../theme/components';
 import Link from '../../Link'
 import styled from 'styled-components';
-
-const LOGO_RAFAEL_VARELA_URL_NAV = 'public/images/logoSm.png';
 
 const StyledUl = styled.ul`
     list-style-type: none;
     display: flex;
     justify-content: right;
+    align-items: center;
 `;
 
 const StyledLi = styled.li`
@@ -76,6 +75,7 @@ export default function Navbar() {
                 <h1>Rafael Varela</h1>
             </Box> */}
             <StyledUl>
+                <StyledLi><Link href="/" ><Image src="/images/logoComNomeRoxo.png"/></Link></StyledLi>
                 <StyledLi><Link href="/" >Home</Link></StyledLi>
                 <StyledLi><Link href="/portfolio" >Portfolio</Link></StyledLi>
                 <StyledLi><Link href="/contato" >Contato</Link></StyledLi>
