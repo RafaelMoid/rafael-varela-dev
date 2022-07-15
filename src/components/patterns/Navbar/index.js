@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { corPrimaria } from "../UI/variaveis";
+import { primaryColor } from "..src/theme/variables.js";
 
 const StyledCabecalho = styled.nav`
-  background-color: ${corPrimaria};
+  background-color: ${primaryColor};
   display: flex;
   justify-content: space-between;
   padding: 0 15vw;
