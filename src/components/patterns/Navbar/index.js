@@ -1,8 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { primaryColor } from "..src/theme/variables.js";
+import { primaryColor } from "../../../theme/variables.js";
+import Link from '../../Link';
+import { Image } from '../../../theme/components';
 
-const StyledCabecalho = styled.nav`
+const Header = styled.nav`
   background-color: ${primaryColor};
   display: flex;
   justify-content: space-between;
@@ -16,31 +18,30 @@ const Logo = styled.img`
   width: 50px;
 `;
 
-const StyledUl = styled.ul`
+const Ul = styled.ul`
     list-style-type: none;
     display: flex;
     justify-content: right;
     align-items: center;
 `;
 
-const StyledLi = styled.li`
+const Li = styled.li`
     margin-left: 2rem;
 `;
 
 
 const Navbar = () => {
   return (
-    <StyledCabecalho>
-      <Logo src="/images/logoComNomeRoxo.png" alt="Logo Smart Bank" />
+    <Header>
+      <Image src="/images/logoComNomeRoxo.png" alt="Logo Smart Bank" />
       <div>
-        <StyledUl>
-                  <StyledLi><Link href="/" ><Image src="/images/logoComNomeRoxo.png"/></Link></StyledLi>
-                  <StyledLi><Link href="/" >Home</Link></StyledLi>
-                  <StyledLi><Link href="/portfolio" >Portfolio</Link></StyledLi>
-                  <StyledLi><Link href="/contato" >Contato</Link></StyledLi>
-              </StyledUl>
-        </div>
-    </StyledCabecalho>
+        <Ul>
+          <Li><Link href="/" >Home</Link></Li>
+          <Li><Link href="/portfolio" >Portfolio</Link></Li>
+          <Li><Link href="/contato" >Contato</Link></Li>
+        </Ul>
+      </div>
+    </Header>
   );
 };
 
